@@ -1,0 +1,4 @@
+.idea
+.env.local
+bin/*
+!bin/install_tools.sh
