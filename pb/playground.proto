@@ -4,6 +4,7 @@ option go_package = "github.com/Kichiyaki/grpcplayground/pb";
 
 service Playground {
   rpc SayHello (SayHelloRequest) returns (SayHelloResponse) {}
+  rpc SayHelloStream (stream SayHelloRequest) returns (stream SayHelloResponse) {}
 }
 
 message SayHelloRequest {
